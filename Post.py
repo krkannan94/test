@@ -17,7 +17,7 @@ api = tweepy.API(auth)
 
 for i in iter(int, 1):
 
-	for tweet in tweepy.Cursor(api.user_timeline, screen_name='its_samyu', include_rts=False, include_replies=False).items(1): 
+	for tweet in tweepy.Cursor(api.user_timeline, screen_name='guroomoorthy', include_rts=False, include_replies=False).items(1): 
 		try:
 			print('\nTweet by: @' + tweet.user.screen_name) 
 
